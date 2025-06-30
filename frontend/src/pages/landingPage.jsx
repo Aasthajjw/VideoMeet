@@ -1,8 +1,9 @@
 import React from 'react';
 import '../App.css';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 function LandingPage() {
+    const router = useNavigate();
     return ( 
         <div className='landingPageContainer'>
             <nav className='navbar'>
@@ -10,9 +11,15 @@ function LandingPage() {
                     VideoMeet
                 </div>
                 <div className='navOptions'>
-                    <p>Join as Guest</p>
-                    <p>Register</p>
-                    <button className='orangeButton'>Login</button>
+                    <p onClick={() => {
+                        router("/aljk23")
+                    }}>Join as Guest</p>
+                    <p onClick={() => {
+                        router("/auth")
+                    }}>Register</p>
+                    <button onClick={() => {
+                        router("/auth")
+                    }} className='orangeButton'>Login</button>
                 </div>
             </nav>
             <div className='landingPageHero'>
