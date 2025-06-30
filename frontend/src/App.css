@@ -1,0 +1,96 @@
+.landingPageContainer{
+  height: 100vh;
+  width: 100vw;
+  background: url(../public/background.png);
+  background-size: cover;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 30px;
+  font-weight: 900;
+}
+
+.navOptions{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 1.5rem;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.navTitle{
+  font-size: 2rem;
+}
+
+.orangeButton{
+  background-color: #D97500;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.landingPageHero{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  height: 85vh;
+  padding-inline: 2rem;
+}
+
+.landingPageImage img{
+  width: 35vw;
+}
+
+.meetContainer {
+  display: flex;
+  padding: 2rem;
+  height: 85vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.meetContainer img {
+  width: 40vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+.meetContainer span{
+  background-color: white; 
+  padding: 8px;  
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .landingPageHero, .meetContainer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .landingPageImage img, .meetContainer img{
+    width: 80vw;
+    margin: 3rem 0 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .navbar{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  .navTitle{
+    margin-bottom: 2vh;
+  }
+}
